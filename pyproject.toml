@@ -1,10 +1,13 @@
 [project]
 name = "eeg-stream-simulator-and-ring-buffer-logger"
 version = "0.1.0"
-description = "A concurrent, multi-ptocess streaming backend for synthetic EEG signal generation"
+description = "A concurrent, multi-process streaming backend for synthetic EEG signal generation"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.0",
+    "numpy>=2.5.1",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -22,3 +25,6 @@ dev = [
 dev = [
     "pytest>=9.1.1",
 ]
+
+[project.scripts]
+eeg-sim = "eeg_simulator.cli:main"
