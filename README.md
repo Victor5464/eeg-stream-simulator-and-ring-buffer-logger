@@ -36,7 +36,7 @@ This repository implements a production-grade **Producer-Consumer architecture**
 
 ### Prerequisites
 * Python 3.8 or higher installed on your system.
-* SQLAlchemy installed in your environment.
+* Have the required modules installed in your environment.
 
 ### Installation
 1. Clone the repository to your local machine:
